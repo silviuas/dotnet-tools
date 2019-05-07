@@ -52,6 +52,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>as-cli</code></td>
+      <td>
+        <p>
+          Use Azure Storage on CLI. Download, upload, show and more on CLI
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/peacecwz/azure-storage-cli">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/peacecwz">@peacecwz</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/azure-storage-cli/">azure-storage-cli</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>azuresigntool</code></td>
       <td>
         <p>
@@ -63,6 +77,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/vcsjones">@vcsjones</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/AzureSignTool/">azuresigntool</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>base64urls </code></td>
+      <td>
+        <p>
+          CLI tool for base64 & base64url encode/decode for URL applications.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/guitarrapc/Base64UrlCore">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/guitarrapc">@guitarrapc</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/base64urls/">base64urls</a></code>
       </td>
     </tr>
     <tr>
@@ -107,6 +135,56 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/tonerdo">@tonerdo</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/coverlet.console/">coverlet.console</a></code>
+      </td>
+    </tr>    
+    <tr>
+      <td><code>csmin</code></td>
+      <td>
+        <p>
+          Fast and small utility to minify C# source. It removes whitespace and comments without
+          altering the behaviour of the code. It is fast and small because it does not need or use Roslyn. It is
+          <a href="https://www.nuget.org/packages/CSharpMinifier/">also available as a library</a>.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/atifaziz/CSharpMinifier">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/atifaziz">@atifaziz</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/CSharpMinifier/">CSharpMinifier</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>csval</code></td>
+      <td>
+        <p>
+          Utility that validates a C# source for syntax errors.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/atifaziz/CSharpSyntaxValidator">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/atifaziz">@atifaziz</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/CSharpSyntaxValidator/">CSharpSyntaxValidator</a></code>
+      </td>
+    </tr>    
+    <tr>
+      <td><code>dacpac</code></td>
+      <td>
+        <p>
+          Publish .dacpac on MS SQL Server without SSDT installed
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/GustavoAmerico/SQLServerDeploy/">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/GustavoAmerico">@gustavoamerico</a>
+        </p>
+        * Install
+        <br />
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Dacpac.Tool/">Dacpac.Tool</a></code>
+        <br />
+        * Run 
+        <br />
+        <code> dotnet dacpac publish --dacpath=C:\artifact\db\ --server=mydatabase.server.contoso.com --databasenames='client1;client2;client3;client4' </code>
       </td>
     </tr>
     <tr>
@@ -306,6 +384,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/FluentMigrator.DotNet.Cli/">FluentMigrator.DotNet.Cli</a></code>
       </td>
     </tr>
+<tr>
+    <td><code>dotnet-format</code></td>
+    <td>
+        <p>
+            <code>dotnet-format</code> is a code formatter for <code>dotnet</code> that applies style preferences to a project or solution. Preferences will be read from an <code>.editorconfig</code> file, if present, otherwise a default set of preferences will be used.
+        </p>
+        <p>
+            <strong>Project site:</strong> <a href="https://github.com/dotnet/format">GitHub</a>
+            <br />
+            <strong>Author:</strong> <a href="https://github.com/dotnet">@dotnet</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-format/">dotnet-format</a></code>
+    </td>
+</tr>	  
     <tr>
       <td><code>dotnet-fsharplint</code></td>
       <td>
@@ -317,7 +409,19 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <br />
           <strong>Author:</strong> <a href="https://github.com/fsprojects">@fsprojects</a>
         </p>
-        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-fsharplint/">FSharpLint</a></code>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-fsharplint/">dotnet-fsharplint</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>dotnet-giio</code></td>
+      <td>
+        <p>
+          A .NET global tool to create useful .gitignore files for your project using gitignore.io
+        </p>
+        <p>
+          <strong>Author:</strong> <a href="https://github.com/liammoat">@liammoat</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-giio/">dotnet-giio</a></code>
       </td>
     </tr>
     <tr>
@@ -375,6 +479,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-imgup</code></td>
+      <td>
+        <p>
+          Global .NET Core tool to upload images on disk to <a href="https://imgur.com">imgur</a>.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/rohith/dotnet-imgup">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/rohith">@rohith</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-imgup/">dotnet-imgup</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-install</code></td>
       <td>
         <p>
@@ -415,6 +533,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-namechk</code></td>
+      <td>
+        <p>
+          Global .NET Core tool to check for the availability of package names on <a href="https://nuget.org">NuGet</a>
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/rohith/dotnet-namechk">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/rohith">@rohith</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://nuget.org/packages/dotnet-namechk">dotnet-namechk</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-nuget-gc</code></td>
       <td>
         <p>
@@ -435,6 +567,8 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           A .NET Core global tool to obfuscate assemblies.
         </p>
         <p>
+	  <strong>Project site:</strong> <a href="https://github.com/obfuscar/obfuscar">GitHub</a>
+          <br />
           <strong>Author:</strong> <a href="https://github.com/lextm">@lextm</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Obfuscar.GlobalTool/">Obfuscar.GlobalTool</a></code>
@@ -451,7 +585,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-outdated/">dotnet-outdated</a></code>
       </td>
-    </tr>
+    </tr> 
     <tr>
       <td><code>dotnet-pr</code></td>
       <td>
@@ -462,6 +596,18 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/johnkors">@johnkors</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-pr">dotnet-pr</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>dotnet-project-licenses</code></td>
+      <td>
+        <p>
+          .NET Core tool to get the licenses of a project.
+        </p>
+        <p>
+          <strong>Author:</strong> <a href="https://github.com/tomchavakis">@tomchavakis</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-project-licenses">dotnet-project-licenses</a></code>
       </td>
     </tr>
     <tr>
@@ -590,6 +736,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-sqldb</code></td>
+      <td>
+        <p>
+          Using DbUp, to apply migration scripts etc. against a SQL-Server database.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/danielwertheim/dotnet-sqldb">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/danielwertheim">@danielwertheim</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-sqldb">dotnet-sqldb</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-sshdeploy</code></td>
       <td>
         <p>
@@ -643,6 +803,18 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/DotnetThx">DotnetThx</a></code>
       </td>
     </tr>
+    <tr>
+      <td><code>dotnet-warp</code></td>
+      <td>
+        <p>
+          A .NET Core global tool to pack project into single executable using Warp.
+        </p>
+        <p>
+          <strong>Author:</strong> <a href="https://github.com/Hubert-Rybak">@Hubert-Rybak</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-warp/">dotnet-warp</a></code>
+      </td>
+    </tr>       
     <tr>
       <td><code>dotnet-xdt</code></td>
       <td>
@@ -699,6 +871,19 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/fsharp">@fsharp</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/fake-cli/">fake-cli</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>file-sort</code></td>
+      <td>
+        <p> A tool to organize files in folders based by date.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/thewindev/FileSort">Github</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/thewindev">@thewindev</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/file-sort/">file-sort</a></code>
       </td>
     </tr>
     <tr>
@@ -773,6 +958,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>git-rocket-filter</code></td>
+      <td>
+        <p>
+          A powerful and faster version of git-filter-branch using C# Roslyn scripting to rewrite/filter commits.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/xoofx/git-rocket-filter">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/xoofx">@xoofx</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/git-rocket-filter/">git-rocket-filter</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>git-status</code></td>
       <td>
         <p>
@@ -784,6 +983,34 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/jerriep">@jerriep</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/git-status-cli/">git-status-cli</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>gitcoauth</code></td>
+      <td>
+        <p>
+          GitCoAuth: simple co-authorship commit line generator for Git commit messages.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/LorenzCK/github-coauth-tool">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/LorenzCK">@LorenzCK</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-gitcoauth">dotnet-gitcoauth</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>GitHubMarkdownSnippets</code></td>
+      <td>
+        <p>
+          A utility for merging snippets into GitHub markdown document.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/SimonCropp/MarkdownSnippets#markdownsnippetstool">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/SimonCropp">@SimonCropp</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/MarkdownSnippets.Tool/">MarkdownSnippets.Tool</a></code>
       </td>
     </tr>
     <tr>
@@ -838,6 +1065,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/abock">@abock</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/IdentifierGenerator/">IdentifierGenerator</a></code>
+      </td>
+    </tr>
+	<tr>
+      <td><code>ilspycmd</code></td>
+      <td>
+        <p>
+          A tool for decompiling .NET assemblies and generating portable PDBs
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/icsharpcode/ILSpy/tree/master/ICSharpCode.Decompiler.Console">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/icsharpcode/ILSpy/">@ilspy</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/ilspycmd/">ilspycmd</a></code>
       </td>
     </tr>
     <tr>
@@ -996,6 +1237,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>NukedBit.NRepo</code></td>
+      <td>
+        <p>
+          .NET Core Global Tool for simplifying repository creation with good defaults.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/nukedbit/nrepo">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/nukedbit">@nukedbit</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/NukedBit.NRepo">NukedBit.NRepo</a></code>
+      </td>
+    </tr>	  
+    <tr>
       <td><code>NuKeeper</code></td>
       <td>
         <p>
@@ -1066,6 +1321,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>recolor</code></td>
+      <td>
+        <p>
+        Colors regex matches on STDIN lines
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/atifaziz/recolor">Github</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/atifaziz">@atifaziz</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Recolor/">recolor</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>reportgenerator</code></td>
       <td>
         <p>
@@ -1094,6 +1363,34 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>rimraf</code></td>
+      <td>
+        <p>
+          rimraf as a .NET Core Global Tool.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/dotnet-tool/rimraf/">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/DoCode">@DoCode</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-rimraf">dotnet-rimraf</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>sbmgr</code></td>
+      <td>
+        <p>
+          Azure servicebus message manager. List, send, resend and delete messages on servicebus queues or topics
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/thonhotels/message-manager">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://www.thonhotels.no">Thon Hotels</a> / <a href="https://novanet.no">Novanet</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/message-manager">message-manager</a></code>
+      </td>
+    </tr>    
+    <tr>
       <td><code>sleet</code></td>
       <td>
         <p>
@@ -1105,6 +1402,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/emgarten">@emgarten</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Sleet/">Sleet</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>speech</code></td>
+      <td>
+        <p>
+          Unofficial Azure Speech CLI - manage acoustic datasets, models, endpoints, transcriptions and more.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/msimecek/Azure-Speech-CLI">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/msimecek">@msimecek</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/azurespeechcli/">AzureSpeechCLI</a></code>
       </td>
     </tr>
     <tr>
@@ -1151,6 +1462,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>todo</code></td>
+      <td>
+        <p>
+          The simple, powerfull and extensible Todo List app in your terminal.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/ivanpaulovich/todo">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/ivanpaulovich">@ivanpaulovich</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/todo">todo</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>trx2junit</code></td>
       <td>
         <p>
@@ -1162,6 +1487,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/gfoidl">@gfoidl</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/trx2junit/">trx2junit</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>tus</code></td>
+      <td>
+        <p>
+          A cli tool for interacting with a Tus enabled server.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/Jon-Indico/TusCli">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/Jon-Indico">@Jon-Indico</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/TusCli/">TusCli</a></code>
       </td>
     </tr>
     <tr>

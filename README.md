@@ -17,8 +17,8 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       <td><code>aistdoc</code></td>
       <td>
         <p>
-          Generates an API reference docs for .NET code (based on XML Documentation comments) and publishes
-          them on the web
+          Generates an API reference documentation for .NET and TypeScript code (based on XML Docs or TypeDoc comments) and publishes
+          it on the web.
         </p>
         <p>
           <strong>Author:</strong> <a href="https://github.com/korzh">@korzh</a>
@@ -66,6 +66,48 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>autocommit</code></td>
+      <td>
+        <p>
+          Automatically commit changes to git on a set interval, ending with a squash merge to the original head
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/StevenThuriot/GitAutoCommit">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/StevenThuriot/GitAutoCommit">@StevenThuriot</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-autocommit/">dotnet-autocommit</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>aver</code></td>
+      <td>
+        <p>
+          Dotnet tool for reading assembly information
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/mocosha/assembly-version">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/mocosha">@mocosha</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/aver/">aver</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>azure-boards-workitems</code></td>
+      <td>
+        <p>
+          Execute queries and other work item data extraction tools.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/sep/AzDevWorkItemHistory">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/jonfuller">@jonfuller</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/azure-boards-workitems/">azure-boards-workitems</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>azuresigntool</code></td>
       <td>
         <p>
@@ -91,6 +133,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/guitarrapc">@guitarrapc</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/base64urls/">base64urls</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>boots</code></td>
+      <td>
+        <p>
+          .NET global tool for bootstrapping vsix &amp; pkg files. Just &quot;boots https://url/to/your/package&quot;!
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/jonathanpeppers/boots">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/jonathanpeppers">@jonathanpeppers</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/boots/">boots</a></code>
       </td>
     </tr>
     <tr>
@@ -136,7 +192,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/coverlet.console/">coverlet.console</a></code>
       </td>
-    </tr>    
+    </tr>
     <tr>
       <td><code>csmin</code></td>
       <td>
@@ -166,7 +222,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/CSharpSyntaxValidator/">CSharpSyntaxValidator</a></code>
       </td>
-    </tr>    
+    </tr>
     <tr>
       <td><code>dacpac</code></td>
       <td>
@@ -182,11 +238,39 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         <br />
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Dacpac.Tool/">Dacpac.Tool</a></code>
         <br />
-        * Run 
+        * Run
         <br />
         <code> dotnet dacpac publish --dacpath=C:\artifact\db\ --server=mydatabase.server.contoso.com --databasenames='client1;client2;client3;client4' </code>
       </td>
     </tr>
+    <tr>
+      <td><code>dbtool</code></td>
+      <td>
+        <p>
+          Exports database data to some commonly-used formats (XML, JSON, etc.) or imports the data in those formats back to DB.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/kedonec/Korzh.DbUtils">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/korzh">@korzh</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Korzh.DbTool/">Korzh.DbTool</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>depguard</code></td>
+      <td>
+        <p>
+          Check your projects for use of disallowed (blacklisted) NuGet packages, including transitive references.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/christophwille/dotnet-depguard/">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/christophwille/">@christophwille</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://github.com/christophwille/dotnet-depguard/">depguard</a></code>
+      </td>
+    </tr>	
     <tr>
       <td><code>dmd5</code></td>
       <td>
@@ -243,6 +327,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-aop">dotnet-aop</a></code>
       </td>
     </tr>
+    <tr>
+      <td><code>dotnet-apim</code></td>
+      <td>
+        <p>
+          A cross-platform dotnet tool which streamlines the CI/CD process of deploying APIs into Azure API Management
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/mirsaeedi/dotnet-apim">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/mirsaeedi/">@mirsaeedi</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/Apim.DevOps.Toolkit/">dotnet-apim</a></code>
+      </td>
+    </tr>	  
     <tr>
       <td><code>dotnet-aspnet-codegenerator</code></td>
       <td>
@@ -397,7 +495,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-format/">dotnet-format</a></code>
     </td>
-</tr>	  
+</tr>
     <tr>
       <td><code>dotnet-fsharplint</code></td>
       <td>
@@ -425,6 +523,17 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-gitreleasemanager</code></td>
+      <td>
+        <p>
+          Tool for creating and exporting releases for software applications hosted on Github </p>
+        <p>
+          <strong>Author:</strong> <a href="https://github.com/GitTools">@GitTools</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/GitReleaseManager.Tool">GitReleaseManager.Tool</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-gitversion</code></td>
       <td>
         <p>
@@ -436,17 +545,6 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/GitTools">@GitTools</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/GitVersion.Tool">GitVersion.Tool</a></code>
-      </td>
-    </tr>
-    <tr>
-      <td><code>dotnet-gitreleasemanager</code></td>
-      <td>
-        <p>
-          Tool for creating and exporting releases for software applications hosted on Github </p>
-        <p>
-          <strong>Author:</strong> <a href="https://github.com/GitTools">@GitTools</a>
-        </p>
-        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/GitReleaseManager.Tool">GitReleaseManager.Tool</a></code>
       </td>
     </tr>
     <tr>
@@ -575,6 +673,21 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-octo</code></td>
+      <td>
+        <p>
+          A .NET Core tool for octo.exe. This lets you install Octo onto a machine or build agent as long as you have the .NET Core 2.1.300 SDK available.
+        </p>
+        <p>
+          <strong>Author:</strong> <a href="https://github.com/OctopusDeploy">@OctopusDeploy</a>
+        </p>
+	<p>
+	Because it is common to install octo.exe in the cloud, you'll likely want to install it in a specific non-OS volume and on the version of Octopus Deploy you currently support:
+	</p>
+        <code>dotnet tool install <a href="https://www.nuget.org/packages/Octopus.DotNet.Cli/">Octopus.DotNet.Cli</a> --tool-path /path/for/tool --version &lt;version&gt;</code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-outdated</code></td>
       <td>
         <p>
@@ -585,7 +698,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-outdated/">dotnet-outdated</a></code>
       </td>
-    </tr> 
+    </tr>
     <tr>
       <td><code>dotnet-pr</code></td>
       <td>
@@ -707,6 +820,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-server</code></td>
+      <td>
+        <p>
+          A configurable local http server to "mock" or fake responses from down stream services.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/joro550/dotnet-server">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/joro550">@joro550</a>
+        </p>
+        <code>dotnet tool install --g <a href="https://www.nuget.org/packages/DotNetSimpleServer/">DotNetSimpleServer</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-snow</code></td>
       <td>
         <p>
@@ -776,20 +903,6 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
-      <td><code>dotnet-t4</code></td>
-      <td>
-        <p>
-          T4 text template processor.
-        </p>
-        <p>
-          <strong>Project site:</strong> <a href="https://github.com/mono/t4">GitHub</a>
-          <br />
-          <strong>Author:</strong> <a href="https://github.com/mhutch">@mhutch</a>
-        </p>
-        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-t4/">dotnet-t4</a></code>
-      </td>
-    </tr>
-    <tr>
       <td><code>dotnet-thx</code></td>
       <td>
         <p>
@@ -804,6 +917,55 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>dotnet-try</code></td>
+      <td>
+        <p>
+          Try.NET Global Tool: interactive in-browser documentation and workshop creator
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://dotnet.microsoft.com/platform/try-dotnet">Try .NET</a>
+          <br />
+          <strong>Source Code:</strong><a href="https://github.com/dotnet/try">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/dotnet">@dotnet (organization)</a>
+        </p>
+        <code>dotnet tool install --global <a href="https://www.nuget.org/packages/dotnet-try/">dotnet-try</a></code>
+        <h3>Using dotnet-try</h3>
+        <p>
+          <code>git clone https://github.com/dotnet/try -b samples</code>
+          <code>dotnet try</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>dotnet-ups</code></td>
+      <td>
+        <p>
+          Synchronize sln folder structure to physical folders also fixing project references.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/floatas/UPS">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/floatas">@Floatas</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-ups">dotnet-ups</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>dotnet-version</code></td>
+      <td>
+        <p>
+          A simple tool to update the version number of your project. If you know of yarn version, this is that for .NET.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/Jon-Indico/DotnetVersion">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/Jon-Indico">@Jon-Indico</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/DotnetVersion/">DotnetVersion</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>dotnet-warp</code></td>
       <td>
         <p>
@@ -814,13 +976,14 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-warp/">dotnet-warp</a></code>
       </td>
-    </tr>       
+    </tr>
     <tr>
       <td><code>dotnet-xdt</code></td>
       <td>
         <p>
-          Global tool for applying XML Document Transformations to .NET configuration files, or any other
-          XML-structured content.
+          Toolbox for applying XML Document Transformations to .NET configuration files, or any other
+          XML-structured content. Includes a .NET Core global tool, a .NET Standard library with no
+          external dependencies, and a standalone .NET 4.6+ executable.
         </p>
         <p>
           <strong>Project site:</strong> <a href="https://github.com/nil4/dotnet-transform-xdt">GitHub</a>
@@ -887,6 +1050,19 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>findref</code></td>
+      <td>
+        <p> Find which assemblies in a folder whom are referencing a given assembly
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/henrihs/findref">Github</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/henrihs">@henrihs</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/findref/">findref</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>flubu</code></td>
       <td>
         <p>
@@ -945,6 +1121,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>git-flow-version</code></td>
+      <td>
+        <p>
+          Create predictable and opinionated SemVer 2.0.0 version numbers for git flow repositories.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/hightechict/DashDashVersion">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/hightechict">@hightechict</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/git-flow-version">git-flow-version</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>git-istage</code></td>
       <td>
         <p> A better git add -p.
@@ -983,6 +1173,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/jerriep">@jerriep</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/git-status-cli/">git-status-cli</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>gitchanges</code></td>
+      <td>
+        <p>
+          Generate changelogs from git history.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/bzumhagen/dotnet-gitchanges">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/bzumhagen">@bzumhagen</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-gitchanges">dotnet-gitchanges</a></code>
       </td>
     </tr>
     <tr>
@@ -1034,6 +1238,8 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           .NET Core Global Tool for creating GUIDs/UUIDs.
         </p>
         <p>
+          <strong>Project site:</strong> <a href="https://github.com/sebnilsson/DotnetGuid">GitHub</a>
+          <br />
           <strong>Author:</strong> <a href="https://github.com/sebnilsson">@sebnilsson</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-guid/">dotnet-guid</a></code>
@@ -1067,7 +1273,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/IdentifierGenerator/">IdentifierGenerator</a></code>
       </td>
     </tr>
-	<tr>
+    <tr>
       <td><code>ilspycmd</code></td>
       <td>
         <p>
@@ -1079,6 +1285,34 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/icsharpcode/ILSpy/">@ilspy</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/ilspycmd/">ilspycmd</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>installsdk</code></td>
+      <td>
+        <p>
+            A global tool for downloading and installing .NET Core SDKs based on a global.json files.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/JosephWoodward/InstallSdkGlobalTool">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/JosephWoodward">@josephwoodward</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/InstallSdkGlobalTool/">InstallSdkGlobalTool</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>json2yaml</code></td>
+      <td>
+        <p>
+          A tool for converting json to yaml. Supports piping.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://gitlab.com/joostas/json-2-yaml">GitLab</a>
+          <br />
+          <strong>Author:</strong> <a href="https://gitlab.com/joostas">@joostas</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/json2yaml/">json2yaml</a></code>
       </td>
     </tr>
     <tr>
@@ -1125,6 +1359,34 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>mddox</code></td>
+      <td>
+        <p>
+          A simple markdown documentation generator using reflection and XML comments.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/loxsmoke/mddox">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/loxsmoke">@loxsmoke</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/LoxSmoke.mddox">loxsmoke.mddox</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>minimig</code></td>
+      <td>
+        <p>
+          A forward-only database migration tool.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/Jaxelr/Minimig">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/jaxelr">@jaxelr</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/minimig">minimig</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>minver-cli</code></td>
       <td>
         <p>
@@ -1136,6 +1398,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/adamralph">@adamralph</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/minver-cli">minver-cli</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>nanoff</code></td>
+      <td>
+        <p>
+          A .NET Core Tool to update the firmware of nanoFramework devices. It can also backup the firmware, deployment and be used in production environment.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/nanoframework/nanoFirmwareFlasher">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/nanoframework">@AArnott</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/nanoFirmwareFlasher/">nanoFirmwareFlasher</a></code>
       </td>
     </tr>
     <tr>
@@ -1163,20 +1439,6 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/fredeil">@fredeil</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/ndjson/">ndjson</a></code>
-      </td>
-    </tr>
-    <tr>
-      <td><code>NuGetKeyVaultSignTool</code></td>
-      <td>
-        <p>
-          Code sign your .nupkg files using an Authenticode certificate stored in Azure Key Vault
-        </p>
-        <p>
-          <strong>Project site:</strong> <a href="https://github.com/onovotny/NuGetKeyVaultSignTool">GitHub</a>
-          <br />
-          <strong>Author:</strong> <a href="https://github.com/onovotny">@onovotny</a>
-        </p>
-        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/NuGetKeyVaultSignTool/">NuGetKeyVaultSignTool</a></code>
       </td>
     </tr>
     <tr>
@@ -1223,6 +1485,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>NuGetKeyVaultSignTool</code></td>
+      <td>
+        <p>
+          Code sign your .nupkg files using an Authenticode certificate stored in Azure Key Vault
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/onovotny/NuGetKeyVaultSignTool">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/onovotny">@onovotny</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/NuGetKeyVaultSignTool/">NuGetKeyVaultSignTool</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>nuke</code></td>
       <td>
         <p>
@@ -1249,7 +1525,7 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/NukedBit.NRepo">NukedBit.NRepo</a></code>
       </td>
-    </tr>	  
+    </tr>
     <tr>
       <td><code>NuKeeper</code></td>
       <td>
@@ -1292,6 +1568,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>p2u</code></td>
+      <td>
+        <p>
+          Paste text content with Unix-like line terminations into Windows Terminal without extra line wrapping. Even into Cmd or Vim.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/celsojr/p2u">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/celsojr">@celsojr</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/p2u">p2u</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>pbm</code></td>
       <td>
         <p>
@@ -1318,6 +1608,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/mgravell">@mgravell</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/protobuf-net.Protogen/">protobuf-net.Protogen</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>pwsh</code></td>
+      <td>
+        <p>
+          PowerShell Core global tool.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/PowerShell/PowerShell">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/PowerShell">@PowerShell</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/PowerShell/">PowerShell</a></code>
       </td>
     </tr>
     <tr>
@@ -1389,7 +1693,21 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/message-manager">message-manager</a></code>
       </td>
-    </tr>    
+    </tr>
+    <tr>
+      <td><code>sharpfuzz</code></td>
+      <td>
+        <p>
+          Command line tool for SharpFuzz instrumentation.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/Metalnem/sharpfuzz">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/Metalnem">@Metalnem</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/SharpFuzz.CommandLine/">SharpFuzz.CommandLine</a></code>
+      </td>
+    </tr>
     <tr>
       <td><code>sleet</code></td>
       <td>
@@ -1447,6 +1765,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>t4</code></td>
+      <td>
+        <p>
+          T4 text template processor.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/mono/t4">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/mhutch">@mhutch</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-t4/">dotnet-t4</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>tcpmux</code></td>
       <td>
         <p>
@@ -1459,6 +1791,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/nicodeslandes">@nicodeslandes</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/TcpMux/">TcpMux</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>templateversions</code></td>
+      <td>
+        <p>
+          Lists all the versions of dotnet core SDKs in your user template directory and the global tools for each version.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/VictorioBerra/TemplateVersions.Tool">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/VictorioBerra">@VictorioBerra</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/TemplateVersions.Tool/">TemplateVersions.Tool</a></code>
       </td>
     </tr>
     <tr>
@@ -1563,6 +1909,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
       </td>
     </tr>
     <tr>
+      <td><code>WhiteSpaceWarrior</code></td>
+      <td>
+        <p>
+           Removes all the stuff you get annoyed about when you speed-read code, such as empty lines, empty comments, and short meaningles comments.
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/kbilsted/WhitespaceWarrior">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/kbilsted">@kbilsted</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.nuget.org/packages/WhiteSpaceWarrior/">WhiteSpaceWarrior</a></code>
+      </td>
+    </tr>
+    <tr>
       <td><code>xscgen</code></td>
       <td>
         <p>
@@ -1574,6 +1934,20 @@ A list of tool extensions for .NET Core Command Line (dotnet CLI), aka '.NET Cor
           <strong>Author:</strong> <a href="https://github.com/mganss">@mganss</a>
         </p>
         <code>dotnet tool install -g <a href="https://www.nuget.org/packages/dotnet-xscgen/">dotnet-xscgen</a></code>
+      </td>
+    </tr>
+    <tr>
+      <td><code>xunit</code></td>
+      <td>
+        <p>
+          Console tool for running xUnit.net tests
+        </p>
+        <p>
+          <strong>Project site:</strong> <a href="https://github.com/natemcmaster/xunit-cli">GitHub</a>
+          <br />
+          <strong>Author:</strong> <a href="https://github.com/natemcmaster">@natemcmaster</a>
+        </p>
+        <code>dotnet tool install -g <a href="https://www.myget.org/feed/natemcmaster/package/nuget/xunit-cli">xunit-cli</a> --add-source https://www.myget.org/F/natemcmaster/api/v3/index.json</code>
       </td>
     </tr>
   </tbody>
